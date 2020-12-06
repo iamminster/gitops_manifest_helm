@@ -1,0 +1,11 @@
+# Pod
+replicaCount: 1
+
+# DockerImage
+image:
+  repository: gcr.io/gitops-react-app/create_react_app
+  tag: "3"
+
+# Service
+service:
+  type: LoadBalancer
