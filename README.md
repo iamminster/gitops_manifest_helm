@@ -3,6 +3,7 @@ GitOpsのマニフェストリポジトリのサンプルです。
 
 こちらのQiita記事で使用しています。  
 https://qiita.com/Nishi53454367/items/4a4716dfbeebd70295d1
+https://qiita.com/Nishi53454367/items/ba8b58e3517bba3af8d6
 
 # 備忘録: HELMテンプレート新規作成手順
 
