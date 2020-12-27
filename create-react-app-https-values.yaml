@@ -1,0 +1,27 @@
+# Pod
+replicaCount: 3
+
+# DockerImage
+image:
+  repository: gcr.io/gitops-react-app/create_react_app
+  tag: "3"
+
+# service.typeはNodePortを指定
+service:
+  type: NodePort
+
+# 設定したいドメインを指定
+domainName: www.hogehoge.com
+
+# Ingress
+ingress:
+  # Ingressを有効化
+  enabled: true
+  annotations:
+    # 予約した静的IP名を指定
+    kubernetes.io/ingress.global-static-ip-name: www-hogehoge-static-ip
+    # ManagedCertificateのリソース名(metadata.name)を指定
+    # 「ArgoCDアプリ名-HELMのChart名」になるようmanagedCertificate.yamlを修正済み
+    #   ・ArgoCDアプリ名：create-react-app
+    #   ・HELMのChart名：web
+    networking.gke.io/managed-certificates: create-react-app-web
