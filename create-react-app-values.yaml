@@ -4,7 +4,7 @@ replicaCount: 3
 # DockerImage
 image:
   repository: gcr.io/gitops-react-app/create_react_app
-  tag: "3"
+  tag: "2"
 
 # Service
 service:
