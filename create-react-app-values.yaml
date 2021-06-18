@@ -1,5 +1,5 @@
 # Pod
-replicaCount: 3
+replicaCount: 2
 
 # DockerImage
 image:
