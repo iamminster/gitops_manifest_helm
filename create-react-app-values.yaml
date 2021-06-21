@@ -3,8 +3,8 @@ replicaCount: 2
 
 # DockerImage
 image:
-  repository: gcr.io/gitops-react-app-317011/create_react_app
-  tag: "2"
+  repository: minhncontainer123.azurecr.io/sampleapp
+  tag: "d60e15dcc9d0662110549bd90cb2f265f49a38a2"
 
 # Service
 service:
